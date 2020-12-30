@@ -122,10 +122,10 @@ public class JLStickerLabelView: UIView {
     //MARK: -
     //MARK: init
     
-    init() {
+    required init() {
         super.init(frame: CGRect.zero)
-//        setup()
-//        adjustsWidthToFillItsContens(self)
+        setup()
+        adjustsWidthToFillItsContens(self)
     }
     
     override init(frame: CGRect) {
@@ -139,11 +139,11 @@ public class JLStickerLabelView: UIView {
             self.bounds.size.height = 25
         }
         
-//        self.setup()
-//        adjustsWidthToFillItsContens(self)
+        self.setup()
+        adjustsWidthToFillItsContens(self)
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 //        setup()
 //        adjustsWidthToFillItsContens(self)
